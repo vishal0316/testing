@@ -1,14 +1,34 @@
 /* ++++++++++ 1to1session ++++++++++ */
 
 ._1to1session {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 ._1to1session-container {
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 5rem;
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 3rem; /* Reduce the gap for smaller screens */
 }
+
+/* Media Query for Tablets */
+@media screen and (max-width: 1024px) {
+    ._1to1session-container {
+      gap: 2rem; /* Reduce the gap further for tablets */
+    }
+  }
+
+
+  /* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    ._1to1session-container {
+      grid-template-columns: 1fr; /* Single column for mobile devices */
+      gap: 1rem; /* Reduce the gap even further for mobile */
+    }
+    ._1to1session-right > p {
+      margin: 1rem 0 1.5rem; /* Adjust the margins for mobile */
+    }
+  }
+
 
 ._1to1session-right > p {
     margin: 1.6rem 0 2.5rem;
@@ -19,7 +39,21 @@
    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+
+      /* Media Query for Tablets */
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    gap: 0.7rem; /* Reduce the gap for tablets */
+  }
+
+  /* Media Query for Mobile Devices */
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr; /* Single column for mobile devices */
+  }
+
 }
+
+
 
 .achievement__card {
      background: var(--color-bg1);
@@ -67,6 +101,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    
+  /* Media Query for Tablets */
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for tablets */
+  }
+
+  /* Media Query for Mobile Devices */
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for mobile devices */
+    gap: 1rem; /* Reduce the gap for mobile */
+  }
 }
 
 .team__member {
@@ -180,7 +226,22 @@
     margin-bottom: 20px;
     margin-left: 2rem;
     margin-right: 2rem;
+
+    @media screen and (max-width: 1024px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     
+  }
+
+  
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    /* Reduce the margins further for mobile */
+    .search-filter {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
   }
    
 
