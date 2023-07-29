@@ -136,10 +136,12 @@
  .discussion .delete {
     color: red;
     cursor: pointer;
+    font-size: 16px;
  }
 
  .discussion .reply {
   cursor: pointer;
+  font-size: 16px;
  }
 
 /* Styles for the upvote button */
