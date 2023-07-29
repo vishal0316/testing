@@ -91,6 +91,10 @@
     margin: 3rem;
     background: var(--color-bg1);
     border-radius: 1rem;
+    @media only screen and (max-width: 768px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   }
  
   .discussion__wrapper .user {
