@@ -19,7 +19,7 @@
   --color-black: #000;
   --color-bg: #1f2641;
   --color-bg1: #2e3267;
-  ---color-bg2: #424890;
+  --color-bg2: #424890;
   --container-width-lg: 76%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
@@ -150,7 +150,7 @@ a {
 }
 
 .nav__menu a:hover {
-  color: var(---color-bg2);
+  color: var(--color-bg2);
 }
 
 .logo {
@@ -284,7 +284,7 @@ header {
 }
 
 .category {
-  background: var(---color-bg2);
+  background: var(--color-bg2);
   padding: 2rem;
   border-radius: 2rem;
   transition: var(--transition);
@@ -565,7 +565,7 @@ footer ul li a :hover {
   text-align: center;
   margin-top: 4rem;
   padding: 1.2rem 0;
-  border-top:1px solid var(---color-bg2);
+  border-top:1px solid var(--color-bg2);
 }
 
 /*=======media queries========  */
@@ -657,7 +657,7 @@ nav button {
 
 }
 .nav__menu li a:hover {
-  background: var(---color-bg2);
+  background: var(--color-bg2);
   color: var(--color-white);
 }
 
